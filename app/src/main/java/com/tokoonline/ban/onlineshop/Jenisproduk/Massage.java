@@ -51,7 +51,7 @@ public class Massage extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_notification) {
-            //startActivity(new Intent(getApplicationContext(), Search.class));
+            startActivity(new Intent(getApplicationContext(), Search.class));
         }
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button

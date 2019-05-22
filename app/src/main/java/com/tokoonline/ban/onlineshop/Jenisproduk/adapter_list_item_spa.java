@@ -65,9 +65,9 @@ public class adapter_list_item_spa extends RecyclerView.Adapter<adapter_list_ite
                 //intent.putExtra("product", data_item);
 
 
-//                Intent intent = new Intent(context, FormRecord.class);
-//                intent.putExtra("name", data_item.getName());
-//                holder.itemView.getContext().startActivity(intent);
+                Intent intent = new Intent(context, FormRecord.class);
+                intent.putExtra("name", data_item.getName());
+                holder.itemView.getContext().startActivity(intent);
 
             }
         });

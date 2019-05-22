@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginBottom="10dp">
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input meteran"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageName"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:id="@+id/buttonSelect"
+                android:background="#FFF"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:id="@+id/imageView"/>
+
+
+            <Button
+                android:layout_margin="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:textColor="#FFF"
+                android:background="@color/colorPrimary"
+                android:id="@+id/buttonUpload"/>
+
+            <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvinfo"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+                    android:textSize="30sp"
+                    android:text="Data sudah terisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

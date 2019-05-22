@@ -38,6 +38,8 @@
 
 
         <activity android:name=".Jenisproduk.Massage" />
+        <activity android:name=".Jenisproduk.FormRecord" />
+        <activity android:name=".Jenisproduk.Search" />
 
     </application>
 
