@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardkuspa1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="1dp"
+        app:cardElevation="30dp"
+        app:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/rumah"
+                    android:id="@+id/articleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/darkGray"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/articleName"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/articleImage"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/gradient_title"
+                    android:elevation="3dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Perumahan 1"
+                    android:textColor="@color/white"
+                    tools:targetApi="lollipop" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardku2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="1dp"
+        app:contentPadding="10dp"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/rumah"
+                    android:id="@+id/articleImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/darkGray"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/articleName2"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/articleImage2"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/gradient_title"
+                    android:elevation="3dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Perumahan 2"
+                    android:textColor="@color/white"
+                    tools:targetApi="lollipop" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
