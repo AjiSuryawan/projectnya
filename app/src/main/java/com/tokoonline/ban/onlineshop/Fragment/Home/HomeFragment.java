@@ -8,6 +8,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.tokoonline.ban.onlineshop.Fragment.Base.BaseFragment;
+import com.tokoonline.ban.onlineshop.Jenisproduk.Massage;
 import com.tokoonline.ban.onlineshop.R;
 
 
@@ -33,9 +34,9 @@ public class HomeFragment extends BaseFragment {
         cardkuspa1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent in=new Intent(view.getContext(), Massage.class);
-//                in.putExtra("category","perum1");
-//                startActivity(in);
+                Intent in=new Intent(view.getContext(), Massage.class);
+                in.putExtra("category","perum1");
+                startActivity(in);
             }
         });
 
